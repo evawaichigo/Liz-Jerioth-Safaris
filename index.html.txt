@@ -1,5 +1,96 @@
-git init
-git remote add origin <https://github.com/evawaichigo/liz-jerioth-website.git>
-git add .
-git commit -m "Initial commit"
-git push -u origin master
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Liz & Jerioth Safaris offers premium car rental, executive chauffeur services, and airport transfers across Kenya. Book your next ride with ease and comfort." />
+  <meta name="keywords" content="Car Rental Kenya, Chauffeur Services Nairobi, Airport Transfers Kenya, Executive Car Hire, Liz & Jerioth Safaris" />
+  <meta name="author" content="Liz & Jerioth Safaris" />
+  <title>Liz & Jerioth Safaris | Car Rental, Chauffeur & Airport Transfers Kenya</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="canonical" href="https://lizjeriothsafaris.com" />
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Liz & Jerioth Safaris</h1>
+      <nav>
+        <ul>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#booking">Book Now</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <h2>Explore Kenya in Style</h2>
+      <p>Your trusted partner for car rentals, chauffeur services, and airport transfers across Kenya.</p>
+      <a href="#booking" class="btn-primary">Book Your Ride</a>
+    </div>
+  </section>
+
+  <section id="services" class="services">
+    <div class="container">
+      <h2>Our Services</h2>
+      <div class="service-grid">
+        <div class="service">
+          <h3>Car Rental</h3>
+          <p>Affordable and reliable car rental options tailored to your travel needs.</p>
+        </div>
+        <div class="service">
+          <h3>Executive Chauffeur Services</h3>
+          <p>Professional, discreet chauffeurs and luxury vehicles for corporate and VIP clients.</p>
+        </div>
+        <div class="service">
+          <h3>Airport Transfers</h3>
+          <p>Timely and comfortable airport pickups and drop-offs for individuals and groups.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="about">
+    <div class="container">
+      <h2>About Us</h2>
+      <p>Liz & Jerioth Safaris is a startup based in Kenya offering world-class transportation services to a global clientele. We pride ourselves on safety, comfort, and customer satisfaction, making your journey seamless from start to finish.</p>
+    </div>
+  </section>
+
+  <section id="booking" class="booking">
+    <div class="container">
+      <h2>Book Your Ride</h2>
+      <form action="/submit-booking" method="POST">
+        <input type="text" name="name" placeholder="Full Name" required />
+        <input type="email" name="email" placeholder="Email Address" required />
+        <input type="text" name="phone" placeholder="Phone Number" required />
+        <select name="service">
+          <option value="Car Rental">Car Rental</option>
+          <option value="Chauffeur Services">Executive Chauffeur Services</option>
+          <option value="Airport Transfer">Airport Transfer</option>
+        </select>
+        <textarea name="details" placeholder="Additional Details"></textarea>
+        <button type="submit" class="btn-primary">Submit</button>
+      </form>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <p>Email: info@lizjeriothsafaris.com</p>
+      <p>Phone: +254 718 508896</p>
+      <p>Location: Nairobi, Kenya</p>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Liz & Jerioth Safaris. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
